@@ -148,6 +148,8 @@ header{
     cursor:pointer;
     transition:0.4s;
     font-weight:600;
+    text-decoration:none;
+    display:inline-block;
 }
 
 .btn-primary{
@@ -358,6 +360,531 @@ footer{
 
     .about-text h1{
         font-size:34px;
+    }
+
+}
+/* SERVICES PAGE */
+
+.services-page{
+    padding:140px 50px 100px;
+    background:#f0fdf4;
+}
+
+.services-container{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.service-card{
+    background:white;
+    padding:40px 30px;
+    border-radius:20px;
+    text-align:center;
+    transition:0.4s;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.service-card:hover{
+    transform:translateY(-12px);
+}
+
+.service-card i{
+    font-size:55px;
+    color:#22c55e;
+    margin-bottom:25px;
+}
+
+.service-card h3{
+    font-size:24px;
+    margin-bottom:15px;
+    color:#166534;
+}
+
+.service-card p{
+    color:#555;
+    line-height:1.7;
+}
+
+/* RESPONSIVE SERVICES */
+
+@media(max-width:992px){
+
+    .services-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .services-container{
+        grid-template-columns:1fr;
+    }
+
+}
+/* CONTACT PAGE */
+
+.contact-page{
+    padding:140px 50px 100px;
+    background:#f9fafb;
+}
+
+.contact-container{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    margin-top:50px;
+}
+
+.contact-info{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.info-box{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    transition:0.4s;
+}
+
+.info-box:hover{
+    transform:translateY(-8px);
+}
+
+.info-box i{
+    font-size:40px;
+    color:#22c55e;
+    margin-bottom:15px;
+}
+
+.info-box h3{
+    color:#166534;
+    margin-bottom:10px;
+}
+
+.contact-form{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.contact-form form{
+    display:flex;
+    flex-direction:column;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding:15px;
+    margin-bottom:20px;
+    border:1px solid #d1d5db;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+}
+
+.contact-form button{
+    padding:15px;
+    border:none;
+    background:#22c55e;
+    color:white;
+    border-radius:50px;
+    font-size:17px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.contact-form button:hover{
+    background:#15803d;
+}
+
+/* RESPONSIVE CONTACT */
+
+@media(max-width:768px){
+
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+
+}
+/* HAMBURGER MENU */
+
+.menu-toggle{
+    display:none;
+    font-size:28px;
+    color:white;
+    cursor:pointer;
+}
+
+/* MOBILE NAVBAR */
+
+@media(max-width:768px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-links{
+        position:absolute;
+        top:80px;
+        left:0;
+        width:100%;
+        background:#166534;
+        flex-direction:column;
+        text-align:center;
+        display:none;
+        padding:20px 0;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links li{
+        margin:10px 0;
+    }
+
+}
+/* GALLERY SECTION */
+
+.gallery{
+    padding:100px 50px;
+    background:white;
+}
+
+.gallery-container{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.gallery-item{
+    overflow:hidden;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.gallery-item img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    transition:0.5s;
+    display:block;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.1);
+}
+
+/* RESPONSIVE GALLERY */
+
+@media(max-width:992px){
+
+    .gallery-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .gallery{
+        padding:80px 20px;
+    }
+
+    .gallery-container{
+        grid-template-columns:1fr;
+    }
+
+}
+/* TESTIMONIALS */
+
+.testimonials{
+    padding:100px 50px;
+    background:#f0fdf4;
+}
+
+.testimonial-container{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.testimonial-card{
+    background:white;
+    padding:40px 30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    transition:0.4s;
+}
+
+.testimonial-card:hover{
+    transform:translateY(-10px);
+}
+
+.testimonial-card img{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.testimonial-card h3{
+    color:#166534;
+    margin-bottom:5px;
+}
+
+.testimonial-card span{
+    color:#22c55e;
+    font-size:14px;
+    display:block;
+    margin-bottom:15px;
+}
+
+.testimonial-card p{
+    color:#555;
+    line-height:1.7;
+}
+
+/* RESPONSIVE TESTIMONIALS */
+
+@media(max-width:992px){
+
+    .testimonial-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .testimonials{
+        padding:80px 20px;
+    }
+
+    .testimonial-container{
+        grid-template-columns:1fr;
+    }
+
+}
+/* STATISTICS SECTION */
+
+.stats{
+    padding:100px 50px;
+    background:
+    linear-gradient(rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1600&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.stats-container{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    text-align:center;
+}
+
+.stat-box{
+    padding:40px 20px;
+}
+
+.stat-box h2{
+    font-size:55px;
+    color:#22c55e;
+    margin-bottom:10px;
+}
+
+.stat-box p{
+    font-size:18px;
+    letter-spacing:1px;
+}
+
+/* RESPONSIVE STATS */
+
+@media(max-width:992px){
+
+    .stats-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .stats{
+        padding:80px 20px;
+    }
+
+    .stats-container{
+        grid-template-columns:1fr;
+    }
+
+}
+/* SCROLL REVEAL */
+
+.reveal{
+    opacity:0;
+    transform:translateY(80px);
+    transition:all 1s ease;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* DARK MODE TOGGLE */
+/* PREMIUM DARK MODE TOGGLE */
+
+.theme-toggle{
+    margin-left:20px;
+}
+
+#darkModeToggle{
+    display:none;
+}
+
+.toggle-label{
+    width:70px;
+    height:34px;
+    background:rgba(255,255,255,0.2);
+    backdrop-filter:blur(10px);
+    border-radius:50px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:relative;
+    padding:0 10px;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+.toggle-label i{
+    font-size:14px;
+    z-index:2;
+}
+
+.sun{
+    color:#facc15;
+}
+
+.moon{
+    color:white;
+}
+
+.toggle-ball{
+    position:absolute;
+    width:28px;
+    height:28px;
+    background:white;
+    border-radius:50%;
+    top:3px;
+    left:4px;
+    transition:0.4s;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+#darkModeToggle:checked + .toggle-label .toggle-ball{
+    transform:translateX(34px);
+}
+
+/* PROFESSIONAL DARK MODE */
+
+body.dark-mode{
+    background:#0f172a;
+    color:white;
+}
+
+body.dark-mode header{
+    background:rgba(15,23,42,0.9);
+}
+
+body.dark-mode .features,
+body.dark-mode .gallery,
+body.dark-mode .services-page,
+body.dark-mode .contact-page,
+body.dark-mode .about-page,
+body.dark-mode .testimonials,
+body.dark-mode .map-section{
+    background:#111827;
+}
+
+body.dark-mode .card,
+body.dark-mode .service-card,
+body.dark-mode .testimonial-card,
+body.dark-mode .info-box,
+body.dark-mode .contact-form{
+    background:#1f2937;
+    color:white;
+}
+
+body.dark-mode .card p,
+body.dark-mode .service-card p,
+body.dark-mode .testimonial-card p,
+body.dark-mode .about-text p,
+body.dark-mode .info-box p{
+    color:#d1d5db;
+}
+
+body.dark-mode .section-title h2,
+body.dark-mode .about-text h1,
+body.dark-mode .service-card h3,
+body.dark-mode .card h3,
+body.dark-mode .info-box h3{
+    color:#22c55e;
+}
+
+body.dark-mode footer{
+    background:#020617;
+}
+/* MAP SECTION */
+
+.map-section{
+    padding:100px 50px;
+    background:#f0fdf4;
+}
+
+.map-container{
+    max-width:1200px;
+    margin:auto;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.map-container iframe{
+    width:100%;
+    height:450px;
+    border:none;
+}
+
+/* RESPONSIVE MAP */
+
+@media(max-width:768px){
+
+    .map-section{
+        padding:80px 20px;
     }
 
 }
