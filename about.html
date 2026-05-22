@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>About - AgriGrow</title>
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- Google Font -->
+    <!-- GOOGLE FONT -->
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
+    <!-- FONT AWESOME -->
+
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
+
 <body>
 
     <!-- HEADER -->
@@ -22,15 +29,43 @@
 
         <nav class="navbar">
 
+            <!-- LOGO -->
+
             <div class="logo">
                 AgriGrow
             </div>
 
+            <!-- DARK MODE TOGGLE -->
+
+            <div class="theme-toggle">
+
+                <input type="checkbox" id="darkModeToggle">
+
+                <label for="darkModeToggle" class="toggle-label">
+
+                    <i class="fa-solid fa-sun sun"></i>
+
+                    <i class="fa-solid fa-moon moon"></i>
+
+                    <span class="toggle-ball"></span>
+
+                </label>
+
+            </div>
+
+            <!-- NAVIGATION -->
+
             <ul class="nav-links">
 
-                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
 
-                <li><a href="about.html">About</a></li>
+                <li>
+                    <a href="about.html" class="active">About</a>
+                </li>
+
+                <!-- DROPDOWN -->
 
                 <li class="dropdown">
 
@@ -40,14 +75,26 @@
                     </a>
 
                     <ul class="dropdown-menu">
-                        <li><a href="services.html">Organic Farming</a></li>
-                        <li><a href="services.html">Smart Irrigation</a></li>
-                        <li><a href="services.html">Crop Management</a></li>
+
+                        <li>
+                            <a href="services.html">Organic Farming</a>
+                        </li>
+
+                        <li>
+                            <a href="services.html">Smart Irrigation</a>
+                        </li>
+
+                        <li>
+                            <a href="services.html">Crop Management</a>
+                        </li>
+
                     </ul>
 
                 </li>
 
-                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
 
             </ul>
 
@@ -57,19 +104,27 @@
 
     <!-- ABOUT SECTION -->
 
-    <section class="about-page">
+    <section class="about-page ">
 
         <div class="about-container">
 
+            <!-- ABOUT IMAGE -->
+
             <div class="about-image">
 
-                <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1200&auto=format&fit=crop" alt="Farm">
+                <img
+                src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1200&auto=format&fit=crop"
+                alt="Farm">
 
             </div>
 
+            <!-- ABOUT CONTENT -->
+
             <div class="about-text">
 
-                <h1>About AgriGrow</h1>
+                <h1>
+                    About AgriGrow
+                </h1>
 
                 <p>
                     AgriGrow is a modern farming platform focused on sustainable
@@ -83,8 +138,17 @@
 
                 <p>
                     Our mission is to create eco-friendly agriculture systems
-                    for a greener future.
+                    that improve farming productivity while protecting nature
+                    and supporting sustainable development for future generations.
                 </p>
+
+                <!-- BUTTON -->
+
+                <a href="services.html" class="btn-primary">
+
+                    Explore Services
+
+                </a>
 
             </div>
 
@@ -96,19 +160,25 @@
 
     <footer>
 
-        <p>© 2025 AgriGrow. All Rights Reserved.</p>
+        <p>
+            © 2025 AgriGrow. All Rights Reserved.
+        </p>
 
         <div class="footer-links">
 
             <a href="#">Privacy Policy</a>
+
             <a href="#">Terms</a>
+
             <a href="contact.html">Contact</a>
 
         </div>
 
     </footer>
 
+    <!-- SCRIPT -->
+
     <script src="script.js"></script>
+
 </body>
 </html>
-
