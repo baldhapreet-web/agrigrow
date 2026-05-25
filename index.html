@@ -1,54 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>AgriGrow - Smart Farming</title>
+
+    <!-- CSS -->
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- Google Font -->
+    <!-- GOOGLE FONT -->
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
+    <!-- FONT AWESOME -->
+
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
+
 <body>
 
     <!-- HEADER -->
+
     <header>
 
         <nav class="navbar">
 
+            <!-- LOGO -->
+
             <div class="logo">
                 AgriGrow
             </div>
+
+            <!-- DARK MODE TOGGLE -->
+
             <div class="theme-toggle">
 
-    <input type="checkbox" id="darkModeToggle">
+                <input type="checkbox" id="darkModeToggle">
 
-    <label for="darkModeToggle" class="toggle-label">
+                <label for="darkModeToggle" class="toggle-label">
 
-        <i class="fa-solid fa-sun sun"></i>
+                    <i class="fa-solid fa-sun sun"></i>
 
-        <i class="fa-solid fa-moon moon"></i>
+                    <i class="fa-solid fa-moon moon"></i>
 
-        <span class="toggle-ball"></span>
+                    <span class="toggle-ball"></span>
 
-    </label>
+                </label>
 
-           </div>
+            </div>
+
+            <!-- MOBILE MENU -->
+
             <div class="menu-toggle">
-             <i class="fa-solid fa-bars"></i>
-             </div>
+
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+
+            <!-- NAVIGATION -->
+
             <ul class="nav-links">
 
-                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
 
-                <li><a href="about.html">About</a></li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
 
-                <!-- Dropdown -->
+                <!-- DROPDOWN -->
+
                 <li class="dropdown">
 
                     <a href="#">
@@ -57,14 +86,26 @@
                     </a>
 
                     <ul class="dropdown-menu">
-                        <li><a href="services.html">Organic Farming</a></li>
-                        <li><a href="services.html">Smart Irrigation</a></li>
-                        <li><a href="services.html">Crop Management</a></li>
+
+                        <li>
+                            <a href="services.html">Organic Farming</a>
+                        </li>
+
+                        <li>
+                            <a href="services.html">Smart Irrigation</a>
+                        </li>
+
+                        <li>
+                            <a href="services.html">Crop Management</a>
+                        </li>
+
                     </ul>
 
                 </li>
 
-                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
 
             </ul>
 
@@ -74,241 +115,293 @@
 
     <!-- HERO SECTION -->
 
-    
     <section class="hero">
 
-    <div class="hero-overlay"></div>
+        <div class="hero-overlay"></div>
 
-    <div class="hero-content">
+        <div class="hero-content">
 
-        <h1>
-            Smart Agriculture For The Future
-        </h1>
+            <h1>
+                Smart Agriculture Solutions For The Future
+            </h1>
 
-        <p>
-            Sustainable farming solutions with modern technology,
-            smart irrigation, and eco-friendly agriculture.
-        </p>
-
-        <div class="hero-buttons">
-
-    <a href="services.html" class="btn-primary">
-        Explore Services
-    </a>
-
-    <a href="#features" class="btn-secondary">
-        Learn More
-    </a>
-
-</div>
-
-    </div>
-
-</section>
-    <!-- FEATURES -->
-
-    <section id="features" class="features reveal">
-
-    <div class="section-title">
-        <h2>Why Choose AgriGrow?</h2>
-        <p>
-            Innovative farming methods designed for modern agriculture.
-        </p>
-    </div>
-
-    <div class="feature-container">
-
-        <div class="card">
-            <i class="fa-solid fa-seedling"></i>
-            <h3>Organic Farming</h3>
             <p>
-                Natural farming practices for healthy and sustainable crops.
+                Transforming modern farming with smart irrigation,
+                organic agriculture, sustainable technology,
+                and eco-friendly farming solutions.
             </p>
+
+            <!-- HERO BUTTONS -->
+
+            <div class="hero-buttons">
+
+                <a href="services.html" class="btn-primary">
+
+                    Explore Services
+
+                </a>
+
+                <a href="#features" class="btn-secondary">
+
+                    Learn More
+
+                </a>
+
+            </div>
+
         </div>
 
-        <div class="card">
-            <i class="fa-solid fa-droplet"></i>
-            <h3>Smart Irrigation</h3>
-            <p>
-                Save water using intelligent irrigation systems.
-            </p>
-        </div>
+    </section>
 
-        <div class="card">
-            <i class="fa-solid fa-tractor"></i>
-            <h3>Modern Equipment</h3>
-            <p>
-                Advanced machinery for efficient farming productivity.
-            </p>
-        </div>
+    <!-- FEATURES SECTION -->
 
-        <div class="card">
-            <i class="fa-solid fa-solar-panel"></i>
-            <h3>Solar Energy</h3>
-            <p>
-                Eco-friendly energy solutions for modern agriculture.
-            </p>
-        </div>
+    <section id="features" class="features">
 
-    </div>
+        <div class="section-title">
 
-</section>
-
-<!-- GALLERY SECTION -->
-
-<section class="gallery reveal">
-
-    <div class="section-title">
-
-        <h2>Our Farming Gallery</h2>
-
-        <p>
-            Explore modern agriculture and sustainable farming practices.
-        </p>
-
-    </div>
-
-    <div class="gallery-container">
-
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200&auto=format&fit=crop" alt="">
-        </div>
-
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=1200&auto=format&fit=crop" alt="">
-        </div>
-
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=1200&auto=format&fit=crop" alt="">
-        </div>
-
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop" alt="">
-        </div>
-
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1499529112087-3cb3b73cec95?q=80&w=1200&auto=format&fit=crop" alt="">
-        </div>
-
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="">
-        </div>
-
-    </div>
-
-</section>
-
-<!-- TESTIMONIALS SECTION -->
-
-<section class="testimonials reveal">
-
-    <div class="section-title">
-
-        <h2>What Farmers Say</h2>
-
-        <p>
-            Trusted by modern farmers and agriculture businesses.
-        </p>
-
-    </div>
-
-    <div class="testimonial-container">
-
-        <div class="testimonial-card">
-
-        
-            <h3>Raj Patel</h3>
-
-            <span>Organic Farmer</span>
+            <h2>Why Choose AgriGrow?</h2>
 
             <p>
-                AgriGrow helped improve our farming productivity using smart irrigation systems.
+                Innovative farming methods designed for modern agriculture.
             </p>
 
         </div>
 
-        <div class="testimonial-card">
+        <div class="feature-container">
 
-           
-        
-            <h3>Priya Sharma</h3>
+            <!-- CARD 1 -->
 
-            <span>Agriculture Consultant</span>
+            <div class="card">
+
+                <i class="fa-solid fa-seedling"></i>
+
+                <h3>Organic Farming</h3>
+
+                <p>
+                    Natural farming practices for healthy and sustainable crops.
+                </p>
+
+            </div>
+
+            <!-- CARD 2 -->
+
+            <div class="card">
+
+                <i class="fa-solid fa-droplet"></i>
+
+                <h3>Smart Irrigation</h3>
+
+                <p>
+                    Save water using intelligent irrigation systems.
+                </p>
+
+            </div>
+
+            <!-- CARD 3 -->
+
+            <div class="card">
+
+                <i class="fa-solid fa-tractor"></i>
+
+                <h3>Modern Equipment</h3>
+
+                <p>
+                    Advanced machinery for efficient farming productivity.
+                </p>
+
+            </div>
+
+            <!-- CARD 4 -->
+
+            <div class="card">
+
+                <i class="fa-solid fa-solar-panel"></i>
+
+                <h3>Solar Energy</h3>
+
+                <p>
+                    Eco-friendly energy solutions for modern agriculture.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- GALLERY SECTION -->
+
+    <section class="gallery">
+
+        <div class="section-title">
+
+            <h2>Our Farming Gallery</h2>
 
             <p>
-                Their sustainable farming solutions are modern, efficient, and eco-friendly.
+                Explore modern agriculture and sustainable farming practices.
             </p>
 
         </div>
 
-        <div class="testimonial-card">
+        <div class="gallery-container">
 
-           
-            <h3>Amit Verma</h3>
+            <div class="gallery-item">
 
-            <span>Farm Owner</span>
+                <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200&auto=format&fit=crop" alt="Farm">
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=1200&auto=format&fit=crop" alt="Agriculture">
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=1200&auto=format&fit=crop" alt="Nature">
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop" alt="Green Field">
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img src="https://images.unsplash.com/photo-1499529112087-3cb3b73cec95?q=80&w=1200&auto=format&fit=crop" alt="Farming">
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="Organic Farm">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+
+    <section class="testimonials">
+
+        <div class="section-title">
+
+            <h2>What Farmers Say</h2>
 
             <p>
-                Excellent farming technologies and professional agricultural support services.
+                Trusted by modern farmers and agriculture businesses.
             </p>
 
         </div>
 
-    </div>
+        <div class="testimonial-container">
 
-</section>
-<!-- STATISTICS SECTION -->
+            <!-- TESTIMONIAL 1 -->
 
-<section class="stats reveal">
+            <div class="testimonial-card">
 
-    <div class="stats-container">
+                <h3>Raj Patel</h3>
 
-        <div class="stat-box">
+                <span>Organic Farmer</span>
 
-            <h2 class="counter" data-target="500">0</h2>
+                <p>
+                    AgriGrow helped improve our farming productivity using smart irrigation systems.
+                </p>
 
-            <p>Happy Farmers</p>
+            </div>
+
+            <!-- TESTIMONIAL 2 -->
+
+            <div class="testimonial-card">
+
+                <h3>Priya Sharma</h3>
+
+                <span>Agriculture Consultant</span>
+
+                <p>
+                    Their sustainable farming solutions are modern, efficient, and eco-friendly.
+                </p>
+
+            </div>
+
+            <!-- TESTIMONIAL 3 -->
+
+            <div class="testimonial-card">
+
+                <h3>Amit Verma</h3>
+
+                <span>Farm Owner</span>
+
+                <p>
+                    Excellent farming technologies and professional agricultural support services.
+                </p>
+
+            </div>
 
         </div>
 
-        <div class="stat-box">
+    </section>
 
-            <h2 class="counter" data-target="120">0</h2>
+    <!-- STATISTICS SECTION -->
 
-            <p>Projects Completed</p>
+    <section class="stats">
+
+        <div class="stats-container">
+
+            <div class="stat-box">
+
+                <h2 class="counter" data-target="500">0</h2>
+
+                <p>Happy Farmers</p>
+
+            </div>
+
+            <div class="stat-box">
+
+                <h2 class="counter" data-target="120">0</h2>
+
+                <p>Projects Completed</p>
+
+            </div>
+
+            <div class="stat-box">
+
+                <h2 class="counter" data-target="15">0</h2>
+
+                <p>Years Experience</p>
+
+            </div>
+
+            <div class="stat-box">
+
+                <h2 class="counter" data-target="50">0</h2>
+
+                <p>Expert Team Members</p>
+
+            </div>
 
         </div>
 
-        <div class="stat-box">
+    </section>
 
-            <h2 class="counter" data-target="15">0</h2>
-
-            <p>Years Experience</p>
-
-        </div>
-
-        <div class="stat-box">
-
-            <h2 class="counter" data-target="50">0</h2>
-
-            <p>Expert Team Members</p>
-
-        </div>
-
-    </div>
-
-</section>
     <!-- FOOTER -->
 
     <footer>
 
-        <p>© 2025 AgriGrow. All Rights Reserved.</p>
+        <p>
+            © 2025 AgriGrow - Smart Farming Solutions. All Rights Reserved.
+        </p>
 
         <div class="footer-links">
 
-            <a href="#">Privacy Policy</a>
+            <a href="about.html">Privacy Policy</a>
 
-            <a href="#">Terms</a>
+            <a href="services.html">Terms</a>
 
             <a href="contact.html">Contact</a>
 
@@ -316,7 +409,10 @@
 
     </footer>
 
+    <!-- JAVASCRIPT -->
+
     <script src="script.js"></script>
 
 </body>
+
 </html>

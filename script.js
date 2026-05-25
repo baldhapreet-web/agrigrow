@@ -78,3 +78,22 @@ darkModeToggle.addEventListener('change', () => {
     document.body.classList.toggle('dark-mode');
 
 });
+// CONTACT FORM VALIDATION
+
+function validateForm(){
+
+    let name = document.getElementById("name").value;
+
+    let email = document.getElementById("email").value;
+
+    if(name === "" || email === ""){
+
+        alert("Please fill all required fields!");
+
+        return false;
+
+    }
+
+    return true;
+
+}
