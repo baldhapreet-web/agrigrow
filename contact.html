@@ -65,7 +65,9 @@
 
                 </li>
 
-<li><a href="contact.html" class="active">Contact</a></li>
+                
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="submissions.html" >Submissions</a></li>
             </ul>
 
         </nav>
@@ -137,13 +139,13 @@
 
             <div class="contact-form">
 
-                <form onsubmit="return validateForm()">
+                <form id="contactForm">
 
                     <input type="text" id="name" placeholder="Your Name" required>
 
                     <input type="email" id="email" placeholder="Your Email" required>
 
-                    <textarea rows="6" placeholder="Your Message" required></textarea>
+                    <textarea id="message" rows="6" placeholder="Your Message" required></textarea>
 
                     <button type="submit">
                         Send Message

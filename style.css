@@ -982,3 +982,57 @@ body.dark-mode footer{
 .nav-links a.active{
     color:#22c55e;
 }
+
+.submissions-page{
+    padding:120px 10%;
+    min-height:80vh;
+    background:#f5faf5;
+}
+
+.submissions-page h1{
+    text-align:center;
+    color:#0f6b2f;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.action-buttons{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.submission-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.submission-card{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.submission-card h3{
+    color:#0f6b2f;
+    margin-bottom:10px;
+}
+
+.delete-btn{
+    margin-top:15px;
+    background:red;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.delete-btn:hover{
+    opacity:0.8;
+}

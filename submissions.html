@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Submissions - AgriGrow</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                AgriGrow
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="services.html">Services</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+                <li><a href="submissions.html" class="active">Submissions</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- SUBMISSIONS SECTION -->
+
+    <section class="submissions-page">
+
+        <div class="container">
+
+            <h1>Contact Form Submissions</h1>
+
+            <p class="subtitle">
+                All messages submitted through the contact form.
+            </p>
+
+            <div class="action-buttons">
+
+                <button id="clearAll" class="btn-primary">
+                    Clear All Records
+                </button>
+
+            </div>
+
+            <div id="submissionList" class="submission-grid">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2025 AgriGrow. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <script>
+
+        let submissions =
+        JSON.parse(localStorage.getItem("contacts")) || [];
+
+        let submissionList =
+        document.getElementById("submissionList");
+
+        function displaySubmissions() {
+
+            submissionList.innerHTML = "";
+
+            if(submissions.length === 0){
+
+                submissionList.innerHTML =
+                "<h3>No submissions found.</h3>";
+
+                return;
+            }
+
+            submissions.forEach((item,index)=>{
+
+                submissionList.innerHTML += `
+
+                <div class="submission-card">
+
+                    <h3>${item.name}</h3>
+
+                    <p>
+                        <strong>Email:</strong>
+                        ${item.email}
+                    </p>
+
+                    <p>
+                        <strong>Message:</strong>
+                        ${item.message}
+                    </p>
+                    <p>
+                        <strong>Date:</strong>
+                        ${item.date}
+                    </p>
+
+                    <button
+                    onclick="deleteSubmission(${index})"
+                    class="delete-btn">
+
+                    Delete
+
+                    </button>
+
+                </div>
+
+                `;
+            });
+
+        }
+
+        function deleteSubmission(index){
+
+            submissions.splice(index,1);
+
+            localStorage.setItem(
+            "contacts",
+            JSON.stringify(submissions));
+
+            displaySubmissions();
+
+        }
+
+        document.getElementById("clearAll")
+        .addEventListener("click",function(){
+
+            if(confirm("Delete all records?")){
+
+                localStorage.removeItem("contacts");
+
+                submissions=[];
+
+                displaySubmissions();
+
+            }
+
+        });
+
+        displaySubmissions();
+
+    </script>
+
+</body>
+
+</html>

@@ -97,3 +97,46 @@ function validateForm(){
     return true;
 
 }
+
+const form = document.getElementById("contactForm");
+
+if(form){
+
+    form.addEventListener("submit", function(e){
+
+        e.preventDefault();
+
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let message = document.getElementById("message").value;
+
+        if(name === "" || email === "" || message === ""){
+
+            alert("All fields are required!");
+            return;
+
+        }
+
+        let submissions =
+        JSON.parse(localStorage.getItem("contacts")) || [];
+
+        submissions.push({
+            name,
+            email,
+            message,
+            date: new Date().toLocaleString()
+        });
+        
+
+        localStorage.setItem(
+            "contacts",
+            JSON.stringify(submissions)
+        );
+
+        alert("Message submitted successfully!");
+
+        form.reset();
+
+    });
+
+}
